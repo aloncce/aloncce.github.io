@@ -1,43 +1,299 @@
 <!DOCTYPE html>
-<!-- Autorius: Alanas Petrauskas -->
 <html lang="lt">
-<head> 
-    <title> Portfolio </title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <h1> Home </h1><br>
-      <title> Home </title>
-        <p class="n1">ALANAS PETRAUSKAS </p1><br>
-        <p class="n2">I'm student</p2>
-    <h2> About </h2>
-      <title> About </title>
-      <img src = "nauseda.jpg" height = "100" weight = "100"><br>
-        <p class="l1">
-         Name: Alanas Petrauskas<br>
-         Birthday: 2004-08-23<br>
-         City: Vilnius, Lithuania<br> 
-         Number: +123 456 789<br> 
-         Email: paslaptis@gmail.com<br>
+  <button id="scroll" class="scroll">
+    <img src="top.jpg" alt="Scroll to Top">
+  </button>
+
+  <header class="header">
+    <h2>Laikas</h2>
+    <div id="clock" class="clock"></div>
+    <h1 class="header-title">Alanas Petrauskas</h1>
+    <p class="header-subtitle">I'm student</p>
+    <nav class="navigation">
+      <ul class="ul">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <h2>Home</h2>
+    <p>Alanas Petrauskas</p>
+    <p>Welcome to my portfolio!</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="nauseda.jpg" height="150" width="150" alt="Profile Picture">
+      </div>
+      <div class="about-info">
+        <p>
+          <img src="svg.svg" width="16" height="16"  class="icon">
+          Name: Alanas Petrauskas
         </p>
-    <h3> Resume </h3>
-      <title> Resume </title>
-      <r1><strong>Summary:</strong> </r1><br>
-       Studijuoju VilniusTECH Elektros energetikos inžineriją<br>
-      <r2><strong>Education:</strong></r2><br>
-       2019-2023 JBG<br>
-      <r3><strong>Professional Experience:</strong></r3><br>
-       NONE
+        <p>
+          <img src="svg.svg" width="16" height="16"  class="icon">
+          Birthday: 2004-08-23
+        </p>
+        <p>
+          <img src="svg.svg" width="16" height="16"  class="icon">
+          City: Vilnius, Lithuania
+        </p>
+        <p>
+          <img src="svg.svg" width="16" height="16"  class="icon">
+          Number: +123 456 789
+        </p>
+        <p>
+          <img src="svg.svg" width="16" height="16"  class="icon">
+          Email: paslaptis@gmail.com
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
 
-    <h4>Portfolio</h4>
-     <title> Portfolio </title>
-     <video src="video.mp4" width="400" height="300" controls></video><br>
-     <iframe src="https://www.youtube.com/embed/uwikSWtHL_k" width="400" height="300"></iframe><br>
-     <audio src="audio.mp3"  controls></audio><br>
-</body>
-</html>
+  <section class="resume" id="resume">
+    <h2>Resume</h2>
+    <p class="r1"><strong>Summary:</strong> Studijuoju VilniusTECH Elektros energetikos inžineriją</p>
+    <p class="r2"><strong>Education:</strong> 2019-2023 JBG</p>
+    <p class="r3"><strong>Professional Experience:</strong> NONE</p>
+    <button id="mode" class="button2">Šviesus/Tamsus</button>
+  </section>
 
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <video src="video.mp4" width="400" height="300" controls></video>
+    <iframe src="https://www.youtube.com/embed/uwikSWtHL_k" width="400" height="300"></iframe>
+    <audio src="audio.mp3" controls></audio>
 
-
+    <div class="math-section">  
+      <!-- Tai yra konteinerio elementas su klase "math-section". 
+           Jis tikriausiai stilizuotas per CSS, kad laikytų matematinį turinį. -->
     
-   
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <mrow>
+          <!-- <mrow> grupuoja matematinius elementus horizontaliai, 
+               kad jie būtų išdėstyti vienoje eilutėje. -->
+    
+          <mo>∫</mo>
+          <!-- <mo> reiškia operatorius. Čia – integralas (∫). -->
+    
+          <msub>
+            <!-- <msub> sukuria indeksą (subscript). Čia jis naudojamas pridėti indeksą "D". -->
+    
+            <mi>D</mi>
+            <!-- <mi> žymi matematinį identifikatorių, paprastai kintamąjį. 
+                 Čia "D" reiškia sritį arba integralavimo domeną. -->
+    
+            <mo>∇</mo>
+            <!-- Indeksas "D" turi ∇ (nabla simbolį), dažnai naudojamą gradientui arba divergencijai žymėti. -->
+          </msub>
+    
+          <mo>⋅</mo>
+          <!-- <mo> reiškia taško operatorių (⋅), nurodantį skaliarinę sandaugą. -->
+    
+          <mi>F</mi>
+          <!-- <mi> žymi matematinį kintamąjį. Čia "F" tikriausiai reiškia vektorinį lauką. -->
+    
+          <mi>dV</mi>
+          <!-- <mi> reiškia "dV", kuris atitinka tūrio diferencialą (integruojamąjį dydį). -->
+    
+          <mo>=</mo>
+          <!-- <mo> reiškia lygybės ženklą (=). -->
+    
+          <mo>∫</mo>
+          <!-- Kitas integralas, šį kartą reiškiantis paviršiaus integralą. -->
+    
+          <msub>
+            <!-- <msub> dar kartą naudojamas indeksui, šį kartą "∂D". -->
+    
+            <mi>∂D</mi>
+            <!-- <mi> reiškia "∂D", tai domeno "D" paviršiaus ribos žymėjimas. -->
+    
+          </msub>
+    
+          <mi>F</mi>
+          <!-- Vektorius "F" dar kartą rodomas čia. -->
+    
+          <mo>⋅</mo>
+          <!-- Taško operatorius (⋅) vėl naudojamas skaliarinei sandaugai žymėti. -->
+    
+          <mi>n</mi>
+          <!-- <mi> žymi "n", vienetinį normalinį vektorių paviršiaus atžvilgiu. -->
+    
+          <mi>dS</mi>
+          <!-- <mi> reiškia "dS", paviršiaus diferencialą (integruojamąjį dydį). -->
+        </mrow>
+      </math>
+      
+    </div>
+    
+    
+
+  <section class="contact" id="contact">
+    <h2>Kontaktai</h2>
+    <form id="contactForm">
+      <label for="firstName">Vardas</label>
+      <input type="text" id="firstName" required>
+
+      <label for="lastName">Pavardė</label>
+      <input type="text" id="lastName" required>
+
+      <label for="email">El. paštas</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Telefono numeris</label>
+      <input type="tel" id="phone" required>
+
+      <label for="address">Adresas</label>
+      <input type="text" id="address" required>
+
+      <label for="question1">Kokia Jūsų nuoaika? (0-10)</label>
+      <input type="number" id="question1" min="1" max="10" required>
+
+      <label for="question2">Kaip vertinate orą? (0-10)</label>
+      <input type="number" id="question2" min="1" max="10" required>
+
+      <label for="question3">Ar laukiate Kalėdų? (0-10)</label>
+      <input type="number" id="question3" min="1" max="10" required>
+
+      <label for="question4">Ar patinka studijuoti? (0-10)</label>
+      <input type="number" id="question4" min="1" max="10" required>
+
+      <label for="question5">Ar laukiate sesijos? (0-10)</label>
+      <input type="number" id="question5" min="1" max="10" required>
+
+      <button type="submit" id="submitBtn">Pateikti</button>
+    </form>
+
+    <div id="result" style="display:none;">
+      <h3>Rezultatai</h3>
+      <p id="formData"></p>
+      <p id="averageResult"></p>
+    </div>
+
+    <div id="errorMessage" style="color: red; display:none;">
+      <p>Įvyko klaida! Patikrinkite formą.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="creator">Alanas Petrauskas</p>
+    <a href="https://www.instagram.com/alanas.petrauskas?igsh=MWJuM3RoeXplamxmMg==">
+      <img src="ig.png" class="ig" height="50" width="50" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/share/1DRiBT2TUy/">
+      <img src="fb.png" class="fb" height="50" width="50" alt="Facebook">
+    </a>
+  </footer>
+
+  <script src="index.js"></script>
+  <script>
+    const modeButton = document.getElementById('mode');
+    modeButton.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    const scrollButton = document.getElementById('scroll');
+    window.addEventListener('scroll', () => {
+      scrollButton.style.display = window.scrollY > 20 ? 'flex' : 'none';
+    });
+    scrollButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0 });
+    });
+
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); 
+
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const resultDiv = document.getElementById('result');
+    const errorMessage = document.getElementById('errorMessage');
+
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+      const question1 = document.getElementById('question1').value;
+      const question2 = document.getElementById('question2').value;
+      const question3 = document.getElementById('question3').value;
+      const question4 = document.getElementById('question4').value;
+      const question5 = document.getElementById('question5').value;
+
+      if (!email || !phone || !address) {
+        errorMessage.style.display = 'block';
+        return;
+      }
+
+      errorMessage.style.display = 'none';
+
+      const average = (parseInt(question1) + parseInt(question2) + parseInt(question3) + parseInt(question4) + parseInt(question5)) / 5;
+
+      let resultColor = '';
+      if (average <= 4) resultColor = 'red';
+      else if (average <= 7) resultColor = 'orange';
+      else resultColor = 'green';
+
+      const formData = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        address,
+        question1,
+        question2,
+        question3,
+        question4,
+        question5,
+        average
+      };
+
+      const formDataText = `
+    <strong>Vardas:</strong> ${formData.firstName} <br>
+    <strong>Pavardė:</strong> ${formData.lastName} <br>
+    <strong>El. Paštas:</strong> ${formData.email} <br>
+    <strong>Telefonas:</strong> ${formData.phone} <br>
+    <strong>Adresas:</strong> ${formData.address} <br>
+    <strong>Klausimai:</strong> 
+    <ul>
+      <li>Klausimas 1: ${formData.question1}</li>
+      <li>Klausimas 2: ${formData.question2}</li>
+      <li>Klausimas 3: ${formData.question3}</li>
+      <li>Klausimas 4: ${formData.question4}</li>
+      <li>Klausimas 5: ${formData.question5}</li>
+    </ul>
+  `;
+  const averageText = `<strong>Vidurkis:</strong> <span style="color:${resultColor}">${formData.average}</span>`;
+
+  document.getElementById('formData').innerHTML = formDataText;
+  document.getElementById('averageResult').innerHTML = averageText;
+  resultDiv.style.display = 'block';
+});
+
+
+
+
+
